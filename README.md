@@ -18,3 +18,7 @@ A=[1,3]
 
 >2022-03-11
 1.  关于request请求中文乱码问题，需设置headers -> accept:*/*，同时需要请求客户端需设置MessageConverter支持MediaType.ALL
+2.  服务端重定向，如果后面还有别的重定向逻辑，一定要return，否则会报以下异常
+```
+java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+```
