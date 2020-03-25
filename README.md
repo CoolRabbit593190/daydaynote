@@ -22,3 +22,17 @@ A=[1,3]
 ```
 java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
 ```
+>2022-03-25
+1.  curl模拟get post请求
+参数说明
+-i 显示全部信息
+-l 只显示头部信息
+-v 显示get请求全过程解析
+```
+curl -H "Content-type: application/json" -X POST -d '{"key1":"value1"}' 服务地址
+curl -d "param1=value1&param2=value2" 服务地址
+```
+2.  telnet 与远程服务建立连接
+```
+telnet 主机 端口
+```
