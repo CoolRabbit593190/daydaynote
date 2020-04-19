@@ -12,9 +12,8 @@ A=[1,3]
 1.  java的Scanner.nextLine()函数会接收回车及空格及tab等特殊字符作为输入，在其它输入回车的输入操作之后试用，可能会出现跳过nextLine函数没执行的假象
 
 >2022-03-10
-1.  mybatis映射xml文件，存在目录必须是mapper，否则接口绑定失败
-2.  Spring注解@Controller需和注解@ResponseBody配合使用，建议用@RestController注解
-3.  mapstruct框架使用时，target和source中有相同名称字段A和B，且B字段需映射C字段。请ignore字段A
+1.  Spring注解@Controller需和注解@ResponseBody配合使用，建议用@RestController注解
+2.  mapstruct框架使用时，target和source中有相同名称字段A和B，且B字段需映射C字段。请ignore字段A
 
 >2022-03-11
 1.  关于request请求中文乱码问题，需设置headers -> accept:*/*，同时需要请求客户端需设置MessageConverter支持MediaType.ALL
